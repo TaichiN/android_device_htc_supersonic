@@ -56,6 +56,10 @@ BOARD_KERNEL_CMDLINE := no_console_suspend=1
 BOARD_KERNEL_BASE := 0x20000000
 BOARD_KERNEL_NEW_PPPOX := true
 
+# Kernel Build
+TARGET_KERNEL_SOURCE := kernel/htc/msm
+TARGET_KERNEL_CONFIG := cyanogen_supersonic_defconfig
+
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 
@@ -104,4 +108,3 @@ BOARD_HAS_NO_SELECT_BUTTON := 1
 #TARGET_RECOVERY_UI_LIB := librecovery_ui_supersonic librecovery_ui_htc
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
-TARGET_PREBUILT_KERNEL := device/htc/supersonic/kernel

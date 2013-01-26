@@ -94,20 +94,7 @@ PRODUCT_COPY_FILES += \
     device/htc/supersonic/apns-conf.xml:system/etc/apns-conf.xml
 
 PRODUCT_COPY_FILES += \
-    device/htc/supersonic/modules/bcm4329.ko:system/lib/modules/bcm4329.ko \
-    device/htc/supersonic/modules/sequans_sdio.ko:system/lib/modules/sequans_sdio.ko
-
-PRODUCT_COPY_FILES += \
     device/htc/supersonic/prebuilt/libcryp98.so:system/lib/libcryp98.so
-
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/htc/supersonic/kernel
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel
 
 $(call inherit-product-if-exists, vendor/htc/supersonic/supersonic-vendor.mk)
 
