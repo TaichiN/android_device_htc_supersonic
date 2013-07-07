@@ -207,7 +207,4 @@
     <string name="config_wimaxServiceClassname">com.android.server.WimaxService</string>
     <!-- Name of the wimax state tracker clas -->
     <string name="config_wimaxStateTrackerClassname">com.htc.net.wimax.WimaxStateTracker</string>
-
-    <!-- Timeout in MS for how long you have to long-press the back key to kill the foreground app. -->
-    <integer name="config_backKillTimeout">1500</integer>
 </resources>
